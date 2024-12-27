@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio - RDG</title>
+	<link rel = "stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/b24e1053a6.js" crossorigin="anonymous"></script>  <!-- copy-paste from fontawesome.com -->
+</head>
+<body>
+	<div id = "header">
+		<div class = "container">
+			<nav>
+				<img src ="Images/logo.jpeg" class = "logo">
+				<ul id = "sidemenu">
+					<li><a href = "#header">Home</a></li>
+					<li><a href = "#about">About</a></li>
+					<li><a href = "#services">Skills</a></li>
+					<li><a href = "#portfolio">Projects</a></li>
+					<li><a href = "#dsa">DSA</a></li>
+					<li><a href = "#contact">Contacts</a></li>
+					<i class="custom fa-solid fa-xmark" onclick = "closemenu()"></i> 
+										 
+				</ul>
+				<i class="custom fa-solid fa-bars" onclick = "openmenu()"></i>
+			</nav>
+			<div class = "header-text">
+				<p>Data Engineer</p>
+				<h1>Hi, I'm <span>Rownab</span><br> from Hyderabad.</h1>
+			</div>
+			
+			
+			<div class = "home-contact">
+		 		<p>
+		 		    <a href="mailto:rownab.dg21@gmail.com" style = "text-decoration: none; color: #ff004f">	 			
+		 				<i class="fa-solid fa-paper-plane"></i> rownab.dg21@gmail.com
+		 			</a>
+	 			</p>
+	 			<p>
+		 			<a href="tel:+918944056609" style = "text-decoration: none; color: #ff004f">
+		 				<i class="fa-solid fa-square-phone"></i> 8944056609
+	 				</a>
+	 			</p>	
+		 	</div>
+		 	
+		 	
+			<div>
+				<a href="Images/Rownab-Das-Gupta-CV.pdf" download="Rownab_Das_Gupta_CV" class = "home-donwload-cv">Download CV</a>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- ------------- about ------------- -->
+	<div id = "about">
+		<div class = "container">
+			<div class = "row">
+				<div class = "about-col-1">
+					<img style = "border: 4px solid #ff004f"  src="Images/user.jpg">
+				</div>
+				<div class = "about-col-2">
+					<h1 class = "sub-title" style="color: #04FB2D">About Me</h1>
+					<p>3.5+ years of experience has added skills like PySpark, SQL, Python, Big data, DSA, Spark,APIs, MySQL, Java etc. in my bucket. Experienced Data Engineer with a proven track record of designing, implementing and optimizing architectures. Skilled in database management, data pipelines and performance tuning to solve complex problems and drive innovation in data-driven decision-making. Excited to leverage my expertise in a dynamic Data Engineer role to drive data-driven solutions and contribute to organizational success.
+					</p>
+					
+					<div class = "tab-titles">
+						<p class = "tab-links active-link" onclick ="opentab('skills')">Skills</p>
+						<p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+						<p class = "tab-links" onclick = "opentab('education')">Education</p>
+					</div>
+					
+					<div class = "tab-contents active-tab" id = "skills">
+						<ul>
+							<li><span style = "font-size: 16px">Data Engineer<br></span><span style = "color: #04FB2D; font-size: 16px">- Worked on PySpark, AWS, Python, Airflow, ETL/ELT, Java, CI/CD Pipelines, Databricks, Cloudera.</span></li>
+							<li><span style = "font-size: 16px">Big data Engineer<br></span><span style = "color: #04FB2D; font-size: 16px">- Worked on Spark, Hadoop, Hive.</span></li>
+							<li><span style = "font-size: 16px">DBMS Expert<br></span><span style = "color: #04FB2D; font-size: 16px">- Worked on of SQL, MySQL, DBMS.</span></li>
+							<li><span style = "font-size: 16px">DSA Expert & Problem Solving<br></span><span style = "color: #04FB2D; font-size: 16px">- 475+ Data Structures & Algorithms questions solved.</span></li>
+						</ul>
+					</div>
+					
+					<div class = "tab-contents" id= "experience">
+						<ul>
+							<li><span>Jan 2022 - Oct 2024<br></span><span style="color: #04FB2D; font-size: 20px"><b>HCL</b></span> (Hyderabad) - Data Engineer.</li>
+							<li><span>Nov 2020 - Jan 2022<br></span><span style="color: #04FB2D; font-size: 20px"><b>Amazon</b></span> (Bangalore) - Process Associate.</li>
+						</ul>
+					</div>
+					
+					<div class = "tab-contents" id = "education">
+						<ul>
+							<li><span>2016 - 2020<br></span><span style = "color : #04fb2d"><b> B.Tech </b></span> - Electrical Engineering.</li>
+							<li><span>2015<br></span><span style = "color : #04fb2d"><b> 12th </b></span> - Science</li>
+							<li><span>2013<br></span><span style = "color : #04fb2d"><b> 10th </b></span> - General</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- ------------- services / skills ------------- -->
+	<div id = "services">
+		<div class ="container">
+			<h1 class = "sub-title"  style="color: #04FB2D; margin-bottom: 15px">My Skills</h1>
+			<div >
+				<hr>
+				<br>
+				<div class = "skills skills-design-1">
+					<br>	
+					<h2 style = "font-weight: 950;">Data Engineer Skills - </h2>
+					<br>
+					<span>PySpark</span>
+					<span>AWS</span>
+					<span>Python</span>
+					<span>ETL/ELT</span>
+					<span>Spark</span>
+					<span>Airflow</span>
+					<span>CI/CD Pipelines</span>
+					<span>Hadoop</span>
+					<span>Databricks</span>
+				</div>
+				<div  class = "skills skills-design-2">
+				
+				<br>
+				<hr>
+				<br>
+				<br>
+					<h2>Database Skills - </h2>
+					<br>
+					<span>SQL</span>
+					<span>DBMS</span>
+					<span>MySQL</span>
+				</div>
+				<br>
+				<hr>
+				<br>
+
+				<div  class = "skills skills-design-1">
+				
+				<br>
+					<h2 style = "font-weight: 950;">Frontend Skills - </h2>
+					<br>
+					<span>HTML</span>
+					<span>CSS</span>
+				</div>
+				<div class = "skills skills-design-2">
+				
+				<br>
+				<hr>
+				<br>
+				<br>
+					<h2>Others - </h2>
+					<br>
+					<span>Java</span>
+					<span>Cloudera</span>
+					<span>Git</span>
+					<span>GitHub</span>
+					<span>C</span>
+				<br>
+				<br>
+				<hr>
+				</div>
+			
+			
+			</div>
+			
+	
+		</div>
+	</div>
+	
+	
+	
+	<!-- ------------- portfolio / projects ------------- -->
+	<div id= "portfolio">
+		<div class = "container">
+			<h1 class = "sub-title"  style="color: #04FB2D; margin-bottom: 25px;">Projects</h1>
+			
+			<p style="color: #ff004f; font-size: 19px;"><b>- Hover / Click on the images to get link of Projects</b></p>
+			<div class = "work-list">
+				<div class = "work">
+					<img src="Images/work-1.png">
+					<div class= "layer">
+						<h3 style="color:aqua">SAS to PySpark Migration Project (Client : DBS Bank)</h3>
+						<p>1. Tech stack - PySpark, AWS (S3, EC2, Lambda, IAM, CLI etc.), Airflow, Python, SQL, Git & GitHub.</p>
+						<p>2. Data Migration by developing end-to-end data pipelines in Cloudera using PySpark, and SQL.</p>
+						<p>3. Use AWS to get and upload the optimized data pipeline result data-sets.</p>
+						<p>4. Collaborated with clients for 100% robust solutions.</p>
+						<p>5. Used Agile methodology with JIRA.</p>
+					    <a href = "https://github.com/RownabDasGupta" target = "blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color:aqua"></i></a>
+					</div>
+				</div>
+				<div class = "work">
+					<img src="Images/work-2.png">
+					<div class= "layer">
+						<h3 style="color:aqua">CRICKET DATA ANALYSIS - ETL</h3>
+						<p>1. Tech stack:  Spark, AWS S3, Databricks, SQL, PySpark</p>
+						<p>2. Extracted the data from .csv file, stored AWS S3/DBFS using Spark & PySpark.</p>
+						<p>3. Defining the relation between them and transform them using SQL to valuable insights.</p>
+						<p>4. Finally visualize the filtered data using Python & Pandas (Matplotlib).</p>
+					    <a href = "https://github.com/RownabDasGupta/CRICKET_DATA_ANALYSIS-S3_Spark_Databricks-ETL" target = "blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color:aqua"></i></a>
+					</div>
+				</div>
+				<div class = "work">
+					<img src="Images/work-3.png">
+					<div class= "layer">
+						<h3 style="color:aqua">Play Store Data Analysis - ETL</h3>
+						<p>1. Tech stack: PySpark, SQL, Databricks, Jupyter Notebook.</p>
+						<p>2. Loaded two .csv files to DBFS and created dataframes.</p>	
+					    <p>3. Extracted meaningful insights by PySpark and SQL to analyze and understand the trend.</p>			
+					    <a href = "https://github.com/RownabDasGupta/Play_Store_Data_Analysis-PySpark_SQL-ETL" target = "blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color:aqua"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href = "https://github.com/RownabDasGupta" target = "blank" class="see-more">See more - GitHub.com</a>
+			
+		</div>
+	</div>
+	
+	
+	
+	<!-- ------------- dsa ------------- -->
+	<div id = "dsa">
+		<div class = "container">
+			<div class = "row">
+				<div class = "about-col-1-dsa">
+					<span style="color: #04FB2D">🔥 475+ DSA SOLVED FINALLY ! 🔥</span><br><br>
+					<img style = "border: 4px solid #ff004f"  src="Images/DSA-Img.jpeg">
+					
+				</div>
+				
+				
+				<div class = "about-col-2-dsa">
+					<h1 class = "sub-title" style="color: #04FB2D">DSA</h1>
+					<p style = "color: #fff">
+					🚀 I solved 475+ Data Structures and Algorithms problems on the LeetCode(250+ Q), GFG(225+ Q) and 
+					HackerRank with 800+ submissions. Each question has been a stepping stone to push my boundaries 
+					& understand of these concepts.</p>
+					<p>💻 I like quality over quantity, that is why I maintained the ratio of
+					<span style = "color: #04FB2D">EASY-MEDIUM-HARD</span> by 
+					<span  style = "color: #04FB2D"> 30%-50%-20%.</span>
+					
+					</p>
+					<div class = "tab-titles-dsa" style = "margin-top: 10px">
+						<p class = "tab-links-dsa active-link-dsa" onclick ="opendsa('leetcode')" style = "color: #fff; "><b>Leetcode</b></p>
+						<p class = "tab-links-dsa" onclick = "opendsa('geeksforgeeks')" style = "color: #fff; "><b>GFG</b></p>
+						<p class = "tab-links-dsa" onclick = "opendsa('hackerrank')"  style = "color: #fff; "><b>HackerRank</b></p>
+					</div>
+					
+					<div class = "tab-contents-dsa active-tab-dsa" id = "leetcode">
+						Leetcode Profile Link - <a style= "color: #ff004f" href="https://leetcode.com/RownabDasGupta/" target = "blank">leetcode.com/RownabDasGupta</a></p>
+							  
+						  <a href= "https://leetcode.com/RownabDasGupta/" target = "blank"><img style = "margin-top: 5px;  display: block;  margin-left: auto;  margin-right: auto; border: 4px solid #04fb2d"  src = "Images/Leetcode_P.jpg"></a>
+						
+					</div>						
+						
+					<div class = "tab-contents-dsa" id= "geeksforgeeks">
+						GeeksForGeeks Profile Link - <a style= "color: #ff004f" href="https://auth.geeksforgeeks.org/user/rownabdg2023gfg/" target = "blank">geeksforgeeks.org/rownabdg2023gfg</a></p>
+							  
+						<a href="https://auth.geeksforgeeks.org/user/rownabdg2023gfg/" target = "blank"><img style = "margin-top: 5px;  display: block;  margin-left: auto;  margin-right: auto; border: 4px solid #04fb2d" src = "Images/GFG_P.jpg"></a>
+						
+					</div>
+					
+					<div class = "tab-contents-dsa" id = "hackerrank">
+						HackerRank Profile Link - <a style= "color: #ff004f" href="https://www.hackerrank.com/rownabdjob97?hr_r=1" target = "blank">hackerrank.com/rownabdjob97</a></p>
+							
+						<a href="https://www.hackerrank.com/rownabdjob97?hr_r=1" target = "blank"><img style = "margin-top: 5px; width: 250px; height: 290px; display: block;  margin-left: auto;  margin-right: auto; border: 4px solid #04fb2d"  src = "Images/HackerRank-Badges.jpeg"></a>
+					
+					</div>
+						
+				</div>
+					
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- ------------- contact / contacts  ------------- -->
+	<div id = "contact">
+		<div class = "container">
+		 	<div class = "row">
+		 		<div class = "contact-left">
+		 			<h1 class= "sub-title"  style="color: #04FB2D">Contact Me</h1>
+		 			
+		 			<p>
+			 			<a href="mailto:rownab.dg21@gmail.com" style = "text-decoration: none; color: #ff004f">	 			
+			 				<i class="fa-solid fa-paper-plane"></i> rownab.dg21@gmail.com
+			 			</a>
+		 			</p>
+		 			<p>
+			 			<a href="tel:+918944056609" style = "text-decoration: none; color: #ff004f">
+			 				<i class="fa-solid fa-square-phone"></i> 8944056609
+		 				</a>
+		 			</p>
+		 			
+		 			<div class="social-icons">
+		 				<a href = "https://www.linkedin.com/in/rownabdasgupta/" target = "blank"><i class="fa-brands fa-linkedin"></i></a>
+		 				<a href = "https://github.com/RownabDasGupta" target = "blank"><i class="fa-brands fa-github" target = "blank"></i></a>
+		 				<a href = "https://www.facebook.com/djcollege.ece" target = "blank"><i class="fa-brands fa-facebook"></i></a>
+		 				
+		 			</div>
+		 			<a href = "Images/Rownab-Das-Gupta-CV.pdf" download class = "btn btn2">Download CV</a>
+		 		</div>
+		 		<div class = "contact-right">
+		 			<form name = "submit-to-google-sheet">
+		 				<input type = "text" name = "Name" placeholder="Your Name" required>
+		 				<input type = "email" name = "Email" placeholder = "Your Email" required>
+		 				<textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea> 
+		 				<button type = "submit" class = "btn btn2">Submit</button>
+		 			</form>
+		 			<span id = "msg"></span>
+		 		</div>
+		 		
+		 	</div>
+		</div>
+		
+		<div class = "copyright">
+			<p>Copyright © Rownab Das Gupta. Made with  <i class="fa-solid fa-heart"></i>  HTML, CSS & JS </p>
+		</div>
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	<!-- ------------- JavaScript portion ------------- -->
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		
+		function opentab(tabname) {
+			for(tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+			
+		}
+	
+	</script>
+	
+	
+	<!-- ------------- DSA section ------------- -->
+	<script>
+		var tablinksdsa = document.getElementsByClassName("tab-links-dsa");
+		var tabcontentsdsa = document.getElementsByClassName("tab-contents-dsa");
+		
+		function opendsa(tabname) {
+			for(tablinkdsa of tablinksdsa) {
+				tablinkdsa.classList.remove("active-link-dsa");
+			}
+			for(tabcontentdsa of tabcontentsdsa) {
+				tabcontentdsa.classList.remove("active-tab-dsa");
+			}
+			event.currentTarget.classList.add("active-link-dsa");
+			document.getElementById(tabname).classList.add("active-tab-dsa");
+			
+		}
+	
+	</script>
+	
+	
+	<!-- ------------- Side menu ------------- -->
+	<script>
+		var sidemenuvar = document.getElementById("sidemenu");
+		
+		function openmenu() {
+			sidemenuvar.style.right = "0";
+		}
+		function closemenu() {
+			sidemenuvar.style.right = "-200px";
+		}
+	</script>
+	
+	
+	
+	
+	
+	<script>
+		  //This is copied from Github
+		  
+		  //here I have pasted the url, what we got from "Google Apps Script" on the right hand side of '='
+		  const scriptURL = 'https://script.google.com/macros/s/AKfycbyPiamk9hyI6kMkMqkPueK14DuCigwNtocR9Y7TI4Lsb5MVQxcbRgv9iP0avk_yszCD/exec'
+		  
+		  const form = document.forms['submit-to-google-sheet']
+		  
+		  const msg = document.getElementById("msg")
+		
+		  form.addEventListener('submit', e => {
+		    e.preventDefault()
+		    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		      .then(response => {
+		      		msg.innerHTML = "Message sent successfully."
+		      		setTimeout(function() {
+		      			msg.innerHTML = "";
+		      		},5000)
+		      		form.reset()
+		      })
+		      .catch(error => console.error('Error!', error.message))
+		  })
+	</script>
+
+</body>
+</html>
